@@ -10,7 +10,7 @@ function install_python27 {
 }
 
 function install_appengine {
-    wget http://googleappengine.googlecode.com/files/google_appengine_1.7.2.zip
+    wget https://storage.googleapis.com/appengine-sdks/featured/google_appengine_1.9.21.zip
     unzip google_appengine_1.7.2.zip
     rm google_appengine_1.7.2.zip
     mv google_appengine ../lib/

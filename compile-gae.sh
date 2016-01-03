@@ -10,12 +10,12 @@ function install_python27 {
 }
 
 function install_appengine {
-    wget http://googleappengine.googlecode.com/files/google_appengine_1.7.2.zip
-    unzip google_appengine_1.7.2.zip
-    rm google_appengine_1.7.2.zip
-    mv google_appengine ../lib/
+    wget https://storage.googleapis.com/appengine-sdks/featured/go_appengine_sdk_linux_amd64-1.9.30.zip
+    unzip go_appengine_sdk_linux_amd64-1.9.30.zip
+    rm go_appengine_sdk_linux_amd64-1.9.30.zip
+    mv go_appengine ../lib/
     cd ../bin/
-    ln -s ../lib/google_appengine/*.py .
+    ln -s ../lib/google_appengine/*.py ../lib/google_appengine/go{app,doc,fmt} .
 }
 
 function install_pil {

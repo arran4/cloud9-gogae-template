@@ -15,7 +15,7 @@ function install_appengine {
     rm go_appengine_sdk_linux_amd64-1.9.30.zip
     mv go_appengine ../lib/
     cd ../bin/
-    ln -s ../lib/google_appengine/*.py ../lib/google_appengine/go{app,doc,fmt} .
+    cp -fs ../lib/go_appengine/*.py ../lib/go_appengine/go{app,doc,fmt} .
 }
 
 function install_pil {
